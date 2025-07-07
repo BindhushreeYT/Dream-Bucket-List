@@ -1,0 +1,66 @@
+/* Reset basic styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f0f2f5, #c9d6ff);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.bucket-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bucket-list li {
+  font-size: 1.2rem;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.completed {
+  background-color: #d4edda;
+  color: #155724;
+  border-left: 6px solid #28a745;
+}
+
+.pending {
+  background-color: #fff3cd;
+  color: #856404;
+  border-left: 6px solid #ffc107;
+}
+
+.bucket-list li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .bucket-list li {
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+}
